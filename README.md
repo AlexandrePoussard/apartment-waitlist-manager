@@ -17,7 +17,6 @@ pip install -r requirements.txt
 ### 2. Seed the database
 
 ```bash
-cd wohntraum
 python seed_data.py
 ```
 
@@ -38,7 +37,7 @@ streamlit run app.py
 | **Dashboard** | Metrics, charts, and a bird's-eye view of the cooperative's hopeless situation |
 | **Applicants** | Searchable/filterable table, detail view, status updates, quick letter generation |
 | **Apartments** | Card grid with Kreis badges, filters, and AI-powered matching (top 5 eligible applicants) |
-| **Letter Generator** | Formal rejection and rare approval letters with Swiss German bureaucratic flair |
+| **Letter Generator** | Formal rejection and rare approval letters |
 | **Add Applicant** | Application form with automatic scoring, rank, and estimated wait time |
 
 ## Scoring Algorithm
@@ -57,7 +56,7 @@ Maximum theoretical score: **100 points**
 ## Project Structure
 
 ```
-wohntraum/
+apartment-waitlist-manager/
 ├── app.py               # Streamlit entry point (all pages)
 ├── database.py          # SQLite setup and queries
 ├── scoring.py           # Applicant scoring logic
@@ -69,7 +68,7 @@ wohntraum/
 
 ## Database
 
-SQLite file stored at `wohntraum/wohntraum.db`. Delete this file and rerun `seed_data.py` to reset.
+SQLite file stored at `wohntraum.db`. Delete this file and rerun `seed_data.py` to reset.
 
 ---
 

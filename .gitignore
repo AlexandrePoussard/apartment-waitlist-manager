@@ -1,6 +1,7 @@
 __pycache__/
 .venv/
 
+wohntraum.db
 
 .CLAUDE.md
 brief.md
